@@ -1,0 +1,355 @@
+/* Размер сайта по отношению к разрешению */
+html {
+  width: 100%;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* параметры всех элементов body */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+/* расположение, цвет и пр. 'шапки' */
+header {
+  display: flex;
+  width: 98%;
+  height: 75px;
+  padding: 0 15px;
+  background-color: #00695c;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+/* расположение, цвет и пр. окна входа */
+.form-popup {
+  display: none;
+  width: 95%;
+  position: absolute;
+  bottom: 50%;
+  right: 14px;
+  background-color: #f1f1f1;
+  color: #000000;
+}
+/* макс. ширина контента */
+.form-container {
+  max-width: 320px;
+}
+/* вводные данные по ширене */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+}
+/* задний фон вводных данных */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #707070;
+}
+/* кнопка 'Отправить' */
+.form-container .btn {
+  background-color: #00695c;
+  opacity: 0.7;
+}
+/* 'Закрыть' */
+.form-container .cancel {
+  background-color: #009e8c;
+}
+/* вкл реагирование блока на 'мышку' */
+.form-container .btn:hover,
+.entrance:hover {
+  opacity: 1;
+}
+/* анимация иконки Вк */
+.scale {
+  margin-left: 10px;
+  transition: 0.6s;
+}
+.scale:hover {
+  transform: scale(1.2);
+}
+/* параметры иконок 'меню'и 'профиль' */
+.meny-toggle img,
+.login img {
+  height: 30px;
+}
+.login span {
+  font-size: 16px;
+  font-weight: bold;
+}
+/* иараметры открывающегося меню */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3a2e39;
+  overflow-x: hidden;
+  padding-top: 35px;
+  transition: 0.5s;
+}
+.sidenav a {
+  padding: 8 px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.entrance {
+  margin-left: 90%;
+  position: absolute;
+}
+/* параметры текста */
+.the_title_of_the_title_description {
+  text-align: left;
+  font-size: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+/* параметры изображения x7 */
+.the_title_of_the_title_image {
+  margin-left: 10px;
+  margin: 10px 20% 10px;
+  height: 350px;
+}
+.products-item_image {
+  margin: 20px;
+  margin-left: 100px;
+  height: 500px;
+}
+.Cult-groups_image {
+  margin: 20px;
+  margin-left: 100px;
+  height: 400px;
+}
+.Cult-groups-1_image {
+  margin: 20px;
+  margin-left: 100px;
+  height: 350px;
+}
+.Cult-groups-2_image {
+  margin: 20px;
+  margin-left: 100px;
+  height: 350px;
+}
+.Cult-groups-4_image {
+  margin: 20px;
+  margin-left: 100px;
+  height: 400px;
+}
+.logotip_image {
+  position: absolute;
+  height: 100px;
+}
+/* параметры загаловка */
+.products-item_heading,
+.Cult-groups_heading,
+.Cult-groups-1_heading,
+.Cult-groups-2_heading,
+.Cult-groups-4_heading {
+  margin-left: 25px;
+}
+/* параметры блока */
+.products-item {
+  width: 85%;
+  max-width: 13000px;
+  margin: 2.5em auto 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+/* тени блоков */
+.Cult-groups,
+.Cult-groups-1,
+.Cult-groups-2,
+.Cult-groups-4,
+.form-popup {
+  width: 85%;
+  max-width: 13000px;
+  margin: 2.5em auto 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ОБРАТНАЯ СВЯЗЬ */
+/* подключение шрифта */
+@import url("https:/*fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* убираем отступы */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+/* При расчете размеров инпутов учитываем внутренние отступы и границы */
+input,
+textarea {
+  box-sizing: border-box;
+}
+/* параметры*/
+.container {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+/* ограничиваем контейнер по ширине 1000px */
+.container {
+  width: 95%;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+/* стили */
+.content {
+  display: flex; /* колонки в ряд */
+  align-items: center; 
+  justify-content: space-between;
+  background: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 8px rgba(34, 60, 80, 0.2);
+}
+/* стили левой колонки */
+.left-side {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+/* разделительная линия */
+.left-side::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 2px;
+  background: #00695c;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* правая колонка */
+.right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+/* параметры деьалей */
+.details {
+  margin-bottom: 15px;
+  text-align: center;
+}
+/* общие стили изображений */
+.details i {
+  font-size: 25px;
+  color: #00695c;
+  margin-bottom: 10px;
+}
+/* стили заголовков левой колонки */
+.topic {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+/* стили текста левой колонки */
+.text-one .text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+/* заголовок правой колонки */
+.topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #00695c;
+  margin-bottom: 10px;
+}
+/* текст правой колонки */
+.right-side p {
+  margin-bottom: 20px;
+}
+/* блока для input */
+.input-box {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* стили input и textarea */
+.input-box input,
+.input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background: #f0f1f8;
+  padding: 0 20px;
+}
+/* стиль поля сообщения */
+.input-box textarea {
+  resize: none;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+/* блока поля сообщение */
+.message-box {
+  min-height: 110px;
+}
+/* стили для блока кнопки */
+.button {
+  display: inline-block;
+}
+
+/* стили кнопки */
+.button input[type="button"] {
+  color: #fff;
+  font-size: 18px;
+  background: #00695c;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  transition: 0.2s;
+}
+/* изменение цвета */
+.button input[type="button"]:hover {
+  background: #009e8c;
+}
+/* параметры блока */
+.footer {
+  background-color: grey;
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+/* параметры копирайта */
+.kopirate {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 70%;
+}
+/* Меняем стили при ширине экрана меньше 800px */
